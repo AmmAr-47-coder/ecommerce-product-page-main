@@ -1,0 +1,268 @@
+.con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 100px;
+  height: 90vh;
+  box-sizing: border-box;
+}
+.img {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.imgm {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.imgm img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgc {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+img {
+  cursor: pointer;
+}
+.m {
+  width: 23%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.m.selected {
+  border-color: orange;
+}
+
+.m img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.tex h4 {
+  font-size: 1.2rem;
+  color: gray;
+}
+.tex h1 {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+.tex p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.tex h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.tex span {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+.tex h5 {
+  text-decoration: line-through;
+  color: gray;
+}
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.qq {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0 10px;
+  height: 50px;
+  border-radius: 7px;
+}
+
+.qq p {
+  font-size: 1.2rem;
+}
+
+.qq button {
+  background: none;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.q {
+  background-image: url(../public/images/icon-minus.svg);
+}
+.e {
+  background-image: url(../public/images/icon-plus.svg);
+}
+
+.fff {
+  flex: 2;
+}
+
+.gg {
+  width: 100%;
+  height: 50px;
+  background-color: orange;
+  border: none;
+  border-radius: 7px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+.w {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  flex-direction: column;
+}
+.ff {
+  display: flex !important;
+}
+
+.photo {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 90%;
+  max-width: 450px;
+  height: auto;
+}
+
+.pop {
+  flex: 1;
+  max-width: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pop img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-color: white;
+}
+
+.b {
+  background-image: url(../public/images/icon-previous.svg);
+  left: -20px;
+  top: 43%;
+}
+.n {
+  background-image: url(../public/images/icon-next.svg);
+  right: -20px;
+  top: 43%;
+}
+
+.lk {
+  align-self: flex-end;
+
+  width: 30px;
+  height: 30px;
+  background-image: url(../public/images/icon-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  top: -40px;
+  right: -40px;
+}
+@media (max-width: 1000px) {
+  .imgc {
+    .m {
+      width: 20%;
+    }
+  }
+  .con {
+    flex-direction: column;
+    padding: 10px;
+    gap: 40px;
+    height: 100%;
+  }
+  .text {
+    width: 100%;
+  }
+  .img {
+    width: 100%;
+  }
+  .imgc {
+    flex-wrap: wrap;
+  }
+  .qq {
+    width: 100%;
+  }
+  .fff {
+    width: 100%;
+  }
+  .photo {
+    flex-direction: column;
+    width: 90%;
+  }
+  .photo button {
+    transform: none !important;
+  }
+}
+@media (max-width: 600px) {
+  .imgc {
+    .m {
+      width: 20%;
+    }
+  }
+  .photo{
+    width: 300px;
+    height: 300px;
+  }
+}
